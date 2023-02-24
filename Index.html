@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>CV Mariano</title>
+  </head>
+  <body class="body-style">
+    <header>
+      <div class="container text-center">
+        <div class="row-header_center">
+          <div class="header-left_style header-style">
+            <button id="contact-button" data-target="#myModal"  class="header-button_style">
+              Contáctame
+            </button>
+            <div id="myModal" class="modal">
+              
+              <form class="contact_form-style">
+                <span style='text-align: center;'>Ingrese sus datos para contactarme </span>
+                <br>
+                
+                <span style='text-align: center;'>con mucho gusto devolveré el mensaje</span>
+                
+                <br>
+                <!-- Campos del formulario -->
+                <label class="label-form">Nombre:</label><input placeholder class="input-form">
+                <label class="label-form">email:</label><input placeholder class="input-form" type="email">
+                <label class="label-form">Direccion:</label><input placeholder class="input-form">
+                <label class="label-form">Teléfono:</label><input placeholder class="input-form" type="number">
+                <label class="label-form">Comentario:</label><textarea class="text-a-form"></textarea>
+                <div class="buttons-group"><button class="form-button_reject">Cancelar</button><button class="form-button_submit">Aceptar</button></div>
+                
+              </form>
+           
+            </div>
+            
+            <button id='personal-data' type="button" class="header-button_style">
+              Datos Personales
+            </button>
+            
+            <div id="pop-up" class="personal-data_style" >
+              <div id="icon-data_close" class="icon-style_close">
+                <div class="close-message">
+                  Cerrar
+                </div>
+                <span class="material-symbols-outlined ">
+                close
+                </span>
+               
+            </div>
+              <ul>
+                <li ><div><span>Nombre:  </span><span id="name"></span></div></li>
+                <li ><div><span>Apellido:  </span><span id="last"></span></div></li>
+                <li ><div><span>Sexo:  </span><span id="gender"></span></div></li>
+                <li ><div><span>Teléfono:  </span><span id="phone"></span></div></li>
+                <li ><div><span>Ciudad:  </span><span id="city"></span></div></li>
+                <li ><div><span>Email:  </span><span id="email"></span></div></li>
+              </ul>
+            </div>
+          </div>
+          <div  class="header-center_styl header-style">
+            <button id="header-proyect_button" type="button" class="header-button_style">Proyectos</button>
+            <div id="proyects" class="header-proyects_style">
+              <div id="icon-close" class="icon-style_close">
+                <div class="close-message">
+                  Cerrar
+                </div>
+                <span class="material-symbols-outlined ">
+                close
+                </span>
+               
+            </div>
+            <div>
+              <ol>
+              <li ><div><span>Buscador de youtube conectado a una Api </span><span id="proyect-1"></span></div></li>
+              
+              <br>
+              <li ><div><span>Indicador de Clima según ubicación geográfica  </span><span id="proyect-2"></span></div>
+                
+                <br></li>
+              <li ><div><span>Chat cliente/proveedor con Mongo DB  </span><span id="proyect-3"></span></div></li>
+              
+            </ol>
+          </div>
+          </div>
+          
+          
+        </div>
+        <div class="header-right_style header-style">
+          <button id="message-header_button" type="button" class="header-button_style">
+            Déjame un Mensaje
+          </button>
+          <div id="leave-message_header" class="leave-message_style">
+            <form>
+              <div class="style-message_popup">
+            <span>Déjame un mensaje y con gusto lo responderé</span>
+            <br>
+            <textarea class="text-area_message"></textarea>
+            <br>
+            <div class="buttons-group"><button class="form-button_reject">Cancelar</button>
+              <button type="submit" class="form-button_submit">Aceptar</button>
+            </div>
+          </div>
+          </form>
+
+          </div>
+          <button id="satisfaction-button" type="button" class="header-button_style">Si te gusto mi Página CV, haz un click</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container body-container">
+        <div class="row body-row">
+          <div class="col-4 col-body_left">
+            <div id="photo" class="photo-box">
+              
+            </div>
+          </div>
+          <div class="col-4 col-body_center">
+            <div  class="arrow-center"></div>
+            
+          </div>
+          <div class="col-4 col-body-right">
+            <div class="arrow-group arrow-box_1"><div class="arrows style-arrow-1"></div><div class="circle-message circle-message-1"><span>Disciplina</span></div></div>
+            <div class="arrow-group arrow-box_2"><div class="arrows style-arrow-2"></div><div class="circle-message circle-message-2"><span>Puntualidad</span></div></div>
+            <div class="arrow-group arrow-box_3"><div class="arrows style-arrow-3"></div><div class="circle-message circle-message-3"><span>Compromiso</span></div></div>
+            <div class="arrow-group arrow-box_4"><div class="arrows style-arrow-4"></div><div class="circle-message circle-message-4"><span>Cordialidad</span></div></div>
+            <div class="arrow-group arrow-box_5"><div class="arrows style-arrow-5"></div><div class="circle-message circle-message-5"><span>Dedicación</span></div></div>
+          </div>
+        </div>
+      </main>
+      <footer><div class="container">
+        <div class="row-footer">
+          <div class="div"><div class="card">
+            <div class="card-side front">
+              <div>Innovación</div>
+            </div>
+            <div class="card-side back">
+              <div><span>"ha sido miembro del equipo por 2 años y ha innovado en varios aspectos de la empresa".</span>
+
+                <br>
+                <br>
+              <span style="text-align: center;">Gerente General Soft Inc.</span></div>
+            </div>
+          </div></div>
+          <div class="div"><div class="card">
+            <div class="card-side front">
+              <div>Responsabilidad</div>
+            </div>
+            <div class="card-side back">
+              <div><span>"Tiene el premio a la asistencia perfecta dentro de la compañia".</span>
+
+                <br>
+                <br>
+              <span style="text-align: center;">Gerente de Recursos Humanos Soft Inc.</span></div>
+            </div>
+          </div></div>
+          <div class="div"><div class="card">
+            <div class="card-side front">
+              <div>
+                Compañerismo
+              </div>
+            </div>
+            <div  class="card-side back">
+              <span>"He trabajado varios años con </span><span id='flip-card_name'></span>
+              <span>y es una excelente persona, un gran amigo! "</span>
+              <br>
+                <br>
+              <span>  Danna hann, At. & E.</span>
+            </div>
+          </div></div>
+          <div class="div"><div class="card">
+            <div class="card-side front">
+              <div>Confiabilidad</div>
+            </div>
+            <div class="card-side back">
+              <span>"El hecho que sea oriundo de</span>
+              <span id="flip-card_city"></span>
+              <span>le otorga una marca indiscutida de confianza"</span>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </footer>
+    <script src="life.js"></script>
+  </body>
+</html>
